@@ -1,6 +1,25 @@
-# Desafio técnico da Attus - Sistema de Revendas de Veículos
+# Desafio técnico da Attus - Sistema de Gerenciamento de Pessoas
 
-Desafio proposto para a vaga de desenvolvedor backend na empresa Mobiauto. Basicamente se trata de uma API com Java e Spring Boot para o gerenciamento de revendas de veículos, com todas as operações de CRUD e regras de negócio devidas.
+Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicamente se trata de uma funcionalidade em uma API com Java e Spring Boot para gerenciamento de pessoas e endereços, com todas as operações devida
+
+
+# Funcionalidades da API
+
+## Pessoas
+- [x] Criar uma pessoa
+- [x] Editar uma pessoa
+- [x] Consultar uma pessoa
+- [x] Consultar várias pessoas
+
+## Endereços
+- [x] Criar um endereço para uma pessoa
+- [x] Editar um endereço de uma pessoa
+- [x] Consultar um endereço de uma pessoa
+- [x] Consultar vários endereços de uma pessoa
+
+## Endereço Principal
+- [x] Indicar qual endereço será considerado o principal de uma pessoa
+
 
 # Requisitos mínimos necessários
 
