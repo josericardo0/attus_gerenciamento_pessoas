@@ -2,8 +2,8 @@ version: '3.1.8'
 services:
   springboot-app:
     build:
-      context: C:\Users\ricar_iy0h\Downloads\desafio
-      dockerfile: C:\Users\ricar_iy0h\Downloads\desafio\Dockerfile
+      context: /home/hjhgjhgjhg/IdeaProjects/attus_gerenciamento_pessoas
+      dockerfile: /home/hjhgjhgjhg/IdeaProjects/attus_gerenciamento_pessoas/Dockerfile
     ports:
       - "8080:8080"
     networks:

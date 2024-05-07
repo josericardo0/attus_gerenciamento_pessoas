@@ -24,9 +24,9 @@ dependencies {
 	testImplementation 'org.testcontainers:junit-jupiter'
 	testImplementation 'org.testcontainers:postgresql'
 	implementation 'org.modelmapper:modelmapper:2.4.0'
-	implementation 'org.springdoc:springdoc-openapi-ui:1.5.9'
-
 }
+
+
 
 tasks.named('test') {
 	useJUnitPlatform()

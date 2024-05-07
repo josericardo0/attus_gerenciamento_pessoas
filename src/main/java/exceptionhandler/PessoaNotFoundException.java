@@ -1,4 +1,4 @@
-package exceptionshandler;
+package exceptionhandler;
 
 public class PessoaNotFoundException extends RuntimeException {
 

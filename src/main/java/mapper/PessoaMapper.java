@@ -9,7 +9,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class PessoaMapper {
     @Autowired
-    private ModelMapper modelMapper;
+    private final ModelMapper modelMapper;
+
+    public PessoaMapper(ModelMapper modelMapper) {
+        this.modelMapper = modelMapper;
+    }
 
     public PessoaDTO toDTO(Pessoa pessoa) {
         return modelMapper.map(pessoa, PessoaDTO.class);

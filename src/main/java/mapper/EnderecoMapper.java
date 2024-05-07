@@ -9,7 +9,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class EnderecoMapper {
     @Autowired
-    private ModelMapper modelMapper;
+    private final ModelMapper modelMapper;
+
+    public EnderecoMapper(ModelMapper modelMapper) {
+        this.modelMapper = modelMapper;
+    }
 
     public EnderecoDTO toDTO(Endereco endereco) {
         return modelMapper.map(endereco, EnderecoDTO.class);

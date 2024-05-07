@@ -6,7 +6,7 @@ import static org.mockito.Mockito.*;
 import java.util.Optional;
 
 import dto.EnderecoDTO;
-import exceptionshandler.PessoaNotFoundException;
+import exceptionhandler.PessoaNotFoundException;
 import mapper.EnderecoMapper;
 import model.Endereco;
 import model.Pessoa;
