@@ -1,0 +1,33 @@
+version: '3.1.8'
+services:
+  springboot-app:
+    build:
+      context: C:\Users\ricar_iy0h\Downloads\desafio
+      dockerfile: C:\Users\ricar_iy0h\Downloads\desafio\Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - attus-net
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-db:5432/attus
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+    depends_on:
+      - postgres-db
+    command: ["/wait-for-it.sh postgres-db:5432 -t 60 -- java -Djava.security.egd=file:/dev/./urandom -jar /app/desafio-0.0.1-SNAPSHOT.jar
+"]
+
+  postgres-db:
+    image: postgres:latest
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    networks:
+      - attus-net
+    environment:
+      - POSTGRES_DB=attus
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+
+networks:
+  attus-net:
