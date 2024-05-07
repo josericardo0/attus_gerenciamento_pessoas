@@ -55,7 +55,7 @@ Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicame
 - Certifique de trocar os caminhos especificados no docker-compose em "context" e "dockerfile" de acordo com a localização do diretório do projeto e do Dockerfile na sua máquina.
 - Uma vez que estiver com o projeto aberto, execute "gradle build" no terminal (sem as aspas) para buildar.
 - Execute o comando docker-compose up --build para buildar e subir o contêiner logo em seguida.
-- Acessar a URL de cada endpoint para fins de teste, que são /pessoas para Pessoa e /enderecos para Endereços.
+- Acessar a URL de cada endpoint para fins de teste, que são /pessoas para Pessoas e /enderecos para Endereços.
 
 
 ## Especificações técnicas:
