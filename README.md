@@ -1,6 +1,6 @@
 # Desafio técnico da Attus - Sistema de Gerenciamento de Pessoas
 
-Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicamente se trata de uma funcionalidade em uma API com Java e Spring Boot para gerenciamento de pessoas e endereços, com todas as operações devida
+Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicamente se trata de uma funcionalidade em uma API com Java e Spring Boot para gerenciamento de pessoas e endereços, com todas as operações devidas.
 
 
 # Funcionalidades da API
