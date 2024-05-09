@@ -2,6 +2,10 @@
 
 Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicamente se trata de uma funcionalidade em uma API com Java e Spring Boot para gerenciamento de pessoas e endereços, com todas as operações devidas.
 
+## Observação
+
+Por favor siga todo o passo a passo para testar a API em sua máquina, lendo cada etapa em "Como configurar a aplicação".
+
 
 # Funcionalidades da API
 
@@ -49,10 +53,10 @@ Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicame
 - [x] Desenvolvimento no formato REST
 
 
-## Como testar a aplicação:
+## Como configurar a aplicação:
 
 - Faça o clone do repositório na sua máquina, em uma pasta de sua escolha, ou baixe o .zip, extraia e abre a pasta resultante da extração na sua IDE.
-- Certifique de trocar os caminhos especificados no docker-compose em "context" e "dockerfile" de acordo com a localização do diretório do projeto e do Dockerfile na sua máquina.
+- Certifique de trocar os caminhos especificados no docker-compose em "context" e "dockerfile" de acordo com a localização do diretório raiz do projeto e do Dockerfile na sua máquina, respectivamente.
 - Uma vez que estiver com o projeto aberto, execute "gradlew assemble" no terminal (sem as aspas) para buildar.
 - Execute o comando docker-compose up --build para buildar e subir o contêiner logo em seguida.
 - Acessar a URL de cada endpoint para fins de teste, que são /pessoas para Pessoas e /enderecos para Endereços.
@@ -138,20 +142,10 @@ Desafio proposto para a vaga de desenvolvedor backend na empresa Attus. Basicame
 - **Método:** POST
 - **URL:** `http://localhost:8080/enderecos/principal/{pessoaId}/{enderecoId}`
 
-## Prints de alguns testes
-![postpessoa](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/665bcbc1-a13f-448b-b6d3-17698d37b501)
-![putpessoa](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/38b9e7dd-2ba1-47b9-8a35-f6a85e6b232c)
-![criarendereco](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/b76d686f-c0f5-495a-bc37-41dcf4bf96f2)
-![putendereco](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/269b3a5a-95e9-46b1-8279-c70764783997)
-![gettodaspessoas](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/062ed432-c30f-4cbf-abe1-681ccba19cd2)
-![definirendereco](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/83fda232-ce31-435a-8f6e-c8501906e3fa)
 
-
-
-
-
-
-
+## Print da documentação dos endpoints com Swagger (Open API)
+Você também pode acessar http://localhost:8080/swagger-ui/index.html depois que a API estiver rodando para ver os endpoints devidamente documentados.
+![swagger](https://github.com/josericardo0/attus_gerenciamento_pessoas/assets/92414548/3fcfc97a-5822-44ab-ac00-1dcfe7be693f)
 
 ## Especificações técnicas:
 
