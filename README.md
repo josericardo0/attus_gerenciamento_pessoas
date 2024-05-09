@@ -56,10 +56,10 @@ Por favor siga todo o passo a passo para testar a API em sua máquina, lendo cad
 ## Como configurar a aplicação:
 
 - Faça o clone do repositório na sua máquina, em uma pasta de sua escolha, ou baixe o .zip, extraia e abre a pasta resultante da extração na sua IDE.
-- Certifique de trocar os caminhos especificados no docker-compose em "context" e "dockerfile" de acordo com a localização do diretório raiz do projeto e do Dockerfile na sua máquina, respectivamente.
-- Uma vez que estiver com o projeto aberto, execute "gradlew assemble" no terminal (sem as aspas) para buildar.
-- Execute o comando docker-compose up --build para buildar e subir o contêiner logo em seguida.
-- Acessar a URL de cada endpoint para fins de teste, que são /pessoas para Pessoas e /enderecos para Endereços.
+- Certifique de trocar os caminhos especificados em "context" e em "Dockerfile" no arquivo docker-compose.yml de acordo com a localização do diretório raiz do projeto e do Dockerfile na sua máquina, respectivamente.
+- Uma vez que estiver com o projeto aberto, execute "gradlew assemble" no terminal (sem as aspas) para buildar o projeto.
+- Execute o comando docker-compose up --build para buildar a imagem e subir o contêiner logo em seguida.
+- Acessar as URLs de cada endpoint para fins de teste, que são /pessoas para Pessoas e /enderecos para Endereços.
 - Utilize o Postman ou outra ferramenta para teste de APIs de sua preferência.
 
 # Exemplo de requisições para o endpoint de Pessoas
@@ -103,6 +103,7 @@ Por favor siga todo o passo a passo para testar a API em sua máquina, lendo cad
 
 
 # Exemplo de requisições para o endpoint de Endereços
+
 
 ## 1. Criar um novo endereço para uma pessoa:
 
